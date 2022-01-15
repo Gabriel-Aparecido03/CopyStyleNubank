@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 
 import { BsArrowRight } from 'react-icons/bs'
 import { RiArrowRightUpLine } from 'react-icons/ri'
@@ -89,6 +90,7 @@ export function Home() {
                     </div>
                 </div>
             </main>
+            <Footer/>
         </div>
     )
 }
