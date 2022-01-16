@@ -1,28 +1,21 @@
-<div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre o projeto
 
 Esse projeto foi desenvolvido com a intenção de melhorar minhas habilidades com Css e Sass,tive uma evolução muito boa e rápida espero corrigir alguns erros presentes nesse projetos e copiar sites desafiadores mais para a frente 
 
 Motivação:
 * Tenho interesse na área fullstack web,então preciso melhorar muito habilidades com css
 
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+### Feito com : 
 
 * [Sass](https://sass-lang.com/)
 * [React.js](https://reactjs.org/)
+* [React Icons](https://react-icons.github.io/react-icons/)
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Começando com o projeto
 
 Aqui seguirá um exemplo de como executar o projeto em sua máquina
 
