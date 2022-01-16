@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState } from 'react'
 
 
 import logo from '../assets/images/logo.jpg'
@@ -7,11 +7,21 @@ import '../styles/components/Header.scss'
 
 import { MdOutlineLogin } from 'react-icons/md'
 import { RiArrowDownSLine } from 'react-icons/ri'
+import { HiMenuAlt4 } from 'react-icons/hi'
 
 export function Header() {
 
     const styleIconLogin = {color:"rgb(130, 10, 209)"}
 
+    const [isClosedFunction,setIsClosedFunction] = useState<boolean>(false)
+    const [classBtn,setClassBtn] = useState<string>('open-menu')
+
+
+    function toggleButoon() {
+        setIsClosedFunction(!isClosedFunction)
+
+        setClassBtn(isClosedFunction?'close-menu':'open-menu')
+    }
     return(
         <div id="Header">
            <div className="principal-content">
@@ -89,6 +99,7 @@ export function Header() {
                 <div className="login-header-content">
                     <div className="login">
                         <p>Login<MdOutlineLogin style={styleIconLogin}/></p>
+                        <div className='open-menu'><p><HiMenuAlt4/></p></div>
                     </div>
                 </div>
             </div>

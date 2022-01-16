@@ -101,8 +101,8 @@ export function Footer() {
                 </ul>
             </div>
             <div className="linguage">
-                <input type="radio" name="" id="" checked/><p>Português</p>
-                <input type="radio" /><p>English</p>
+                <input type="radio" name="" id="" checked readOnly/><p>Português</p>
+                <input type="radio" readOnly={true}/><p>English</p>
             </div>
         </div>
     )

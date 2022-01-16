@@ -13,27 +13,27 @@ import cartUltraviolet from '../assets/images/cart-ultraviolet.png'
 import phoneInformations from '../assets/images/phone-show-nubank-account.jpg'
 
 export function Home() {
+
+    const showButton = ()=>{
+        console.log(`....`)
+    }
+
     return(
-        <div id="Home">
+        <div id="Home" onScroll={()=>console.log(`..`)}>
             <header>
                 <Header/>
             </header>
             <main>
                 <div className="order-cart">
-                    
-                    <div className="order-content">
-                        <div className="ads-order">
-                           <div className="write-content-order">
-                                <h1>O futuro é a razão que a gente faz <br/>planos.</h1>
-                                <p>Escolha o futuro.Comece a controlar melhor sua vida financeira <br/> com o Nubank.</p>
-                           </div>
-                            <div className="input-content-order">
-                                <div className="input-content">
-                                    <h1>Peça sua conta e cartão de crédito do Nubank</h1>
-                                    <input type="text" className="order-cart" placeholder='digite seu CPF' />
-                                    <button><p>Continuar</p></button>
-                                </div>
-                            </div>
+                    <div className="write-content">
+                        <h1>O futuro é a razão que a gente faz <br/>planos.</h1>
+                        <p>Escolha o futuro.Comece a controlar melhor sua vida financeira <br/> com o Nubank.</p>
+                    </div>
+                    <div className="input-content">
+                        <h3>Peça sua conta e cartão de crédito do Nubank</h3>
+                        <div className="input-area">
+                            <input type="text" name="" id="" placeholder='Digite seu CPF'/>
+                            <button><p>Continuar</p> <span> <BsArrowRight/></span></button>
                         </div>
                     </div>
                 </div>
