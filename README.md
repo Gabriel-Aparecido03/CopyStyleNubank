@@ -37,12 +37,12 @@ Aqui seguirá um exemplo de como executar o projeto em sua máquina
    ```sh
    npm install
    ```
-3.Execute o servidor local
-  ```sh
-  npm start
-  ```
-4.Abre em seu navigador a URL
-```sh
-http://localhost:3000/
-```
+3. Execute o servidor local
+   ```sh
+   npm start
+   ```
+4. Abre em seu navigador a URL
+   ```sh
+   http://localhost:3000/
+   ```
 
