@@ -47,84 +47,12 @@
     background-size: cover;
     background-position: center center;
     
-    .ads-order {
-        width: 100%;
-        height: 100vh;
+   height: 100vh;
+   display: flex;
 
-        padding-top: 19rem;
-        display: flex;
-
-        .write-content-order {
-            color: #fff;
-            margin-left: 12rem;
-            margin-top: 2rem;
-            h1 {
-                font-size: 3.5rem;
-                font-weight: 600;
-            }
-
-            p {
-                font-size: 1.6rem;
-                font-weight: 500;
-            }
-        }   
-
-        .input-content-order {
-
-            background-color: #fff;
-            height: 33%;
-            width: 15%;
-            text-align: center;
-            
-            justify-content: end;
-            right: 3rem;
-            position:absolute;
-    
-            padding-top: 1.3rem;
-            padding-left: .7rem;
-            padding-right: .7rem;
-    
-            border-radius: .4rem;
-    
-            h1 {
-                font-weight: 500;
-                padding: .7rem;
-                font-size: 1.5rem;
-            }
-    
-            input {
-                background-color: #fff;
-                background-image: none;
-    
-                border-bottom-style: solid;
-                border-bottom-width: .1rem;
-    
-                color: rgb(0, 0, 0);
-                text-align: initial;
-                font-size: .9rem;
-    
-                padding: .4rem;
-    
-                width: 100%;
-    
-                font-family: 'Work Sans';
-            }
-        
-            button {
-                background-color: #820ad1;
-                font-weight: 600;
-                padding: 1rem;
-                border-radius: 6rem;
-                
-                font-size: .9rem;
-                color: #fff;
-    
-                margin-top: 4.8rem;
-                width: 90%;
-            }
-
-        }
-    }
+   .write-content-order {
+       
+   }
 }
 
 .normal-cart {
@@ -140,9 +68,7 @@
         }
     }
 
-    .write-content-normal-cart {
-        display: inline-block;
-        
+    .write-content-normal-cart {        
         width: 50%;
         
         margin-left: 8rem;
@@ -160,17 +86,44 @@
             }
         }
 
-        span {
-            font-size: 1rem;
-            color: #820ad1;
-            text-align: initial;
+        .write-content-normal-cart {
+            margin-top: 1rem;
+            display: flex;
         }
 
-        span:hover {
-            text-decoration-line: underline;
-            text-decoration-thickness: 0.1rem;
+        .cart {
+            p {
+                font-size: 1rem;
+                color: #820ad1;
+                display: inline;
+            }
+
+            p{
+                position: relative;
+            }
+
+            p:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #820ad1;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            }
+
+            p:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
         }
-    }
+    } 
 }
 
 .ultraviolet-cart {
@@ -208,15 +161,38 @@
             }
         }
 
-        span {
-            font-size: 1rem;
-            color: #820ad1;
-            text-align: initial;
-        }
+        .ultraviolet {
+            p {
+                font-size: 1rem;
+                color: #820ad1;
+                text-align: initial;
+                display: inline;
+            }
 
-        span:hover {
-            text-decoration-line: underline;
-            text-decoration-thickness: 0.1rem;
+            p{
+                position: relative;
+            }
+
+            p:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #820ad1;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            }
+
+            p:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }         
         }
     }
 }
@@ -254,15 +230,39 @@
             }
         }
 
-        span {
-            font-size: 1rem;
-            color: #820ad1;
-            text-align: initial;
-        }
+        .phone {
+            p {
+                display: inline;
+                font-size: 1rem;
+                color:#820ad1;
+                text-align: initial;
+            }
 
-        span:hover {
-            text-decoration-line: underline;
-            text-decoration-thickness: 0.1rem;
+            p{
+                position: relative;
+            }
+
+            p:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #820ad1;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            }
+
+            p:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
+
         }
     }
 }
@@ -284,7 +284,7 @@
 
         h1 {
             padding-top: 35%;
-            padding-bottom: 5%;
+            padding-bottom: 3%;
             padding-left: 23%;
             font-size: 3rem;
 
@@ -293,10 +293,39 @@
             color: #fff;
         }
 
-        span {
-            padding-left: 23%;
-            text-align: initial;
-            color: #fff;
+        .finance-life {
+            margin-left: 23%;
+
+            p {
+                display: inline;
+                text-align: center;
+                color: #fff;
+            }
+
+            p{
+                position: relative;
+            }
+
+            p:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            }
+
+            p:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -317,7 +346,7 @@
 
         h1 {
             padding-top: 35%;
-            padding-bottom: 5%;
+            padding-bottom: 3%;
             padding-left: 23%;
             font-size: 3rem;
 
@@ -326,10 +355,38 @@
             color: #fff;
         }
 
-        span {
-            padding-left: 23%;
-            text-align: initial;
-            color: #fff;
+        .community {
+            margin-left: 23%;
+            p {
+                display: inline;
+                text-align: initial;
+                color: #fff;
+            }
+
+            p{
+                position: relative;
+            }
+
+            p:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            }
+
+            p:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -351,7 +408,7 @@
 
         h1 {
             padding-top: 35%;
-            padding-bottom: 5%;
+            padding-bottom: 3%;
             padding-left: 23%;
             font-size: 3rem;
 
@@ -360,10 +417,38 @@
             color: #fff;
         }
 
-        span {
-            padding-left: 23%;
-            text-align: initial;
-            color: #fff;
+        .hi {
+            margin-left: 23%;
+
+            p {
+                color: #fff;
+                display: inline;
+            }
+
+            p{
+                position: relative;
+            }
+
+            p:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            }
+
+            p:hover:before {
+                visibility: visible;
+                width: 100%;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
         }
     }
 }

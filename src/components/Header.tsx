@@ -10,7 +10,7 @@ import { RiArrowDownSLine } from 'react-icons/ri'
 
 export function Header() {
 
-    const styleIconLogin = {color:"rgb(130, 10, 209)",fontSize:'1.85rem',marginTop:'.7rem'}
+    const styleIconLogin = {color:"rgb(130, 10, 209)"}
 
     return(
         <div id="Header">
@@ -22,6 +22,7 @@ export function Header() {
                     <nav>
                         <li>
                             <p>Página inicial</p>
+                            <p className='dot'>.</p>
                         </li>
                         <li>
                             <p>Para você <RiArrowDownSLine /></p>
@@ -87,7 +88,7 @@ export function Header() {
                 </div>
                 <div className="login-header-content">
                     <div className="login">
-                        <span><p>Login</p><MdOutlineLogin style={styleIconLogin}/></span>
+                        <p>Login<MdOutlineLogin style={styleIconLogin}/></p>
                     </div>
                 </div>
             </div>
